@@ -33,7 +33,7 @@
 
 source $(dirname $0)/e2e-common.sh
 
-OPERATOR_DIR=$(dirname $0)/..
+OPERATOR_DIR=$(cd $(dirname "$0")/.. && pwd)
 KNATIVE_SERVING_DIR=${OPERATOR_DIR}/..
 
 function install_latest_operator_release() {
